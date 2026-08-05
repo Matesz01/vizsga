@@ -1,8 +1,134 @@
-csapat felépítés: 
-Schmidt Dániel - Front End 
-Rémes-Szabó Bence Máté - Adatbázis
-Pohl Máté Balzs - back end (Projekt vezető)
+# Szórakozóhely weboldal és jegyértékesítő rendszer
 
-elvárásaink: 
+## Projekt leírása
 
-Legyen egy tiszta átlátható kód amiben mindenki el tud igazodni és a programnyelveket nem keverni. Esetlegesen egymásnak jegyzeteket hagyni a kódban hogy tudjuk hogy ki mit akar pontosan csinálni. Mi egy szórakozó helynek készítünk weboldalt ahol jegyeket is lehet vásrolni külön eseményekre. Fizetni is lehessen aztán emailben küldje az egyedi belépőt (azt még valahogy ki kell találni hogyan kell). Kattintás számlálóval miből lehet statisztikát csinálni mennyien nézték meg az adott eseményt illetve hányan milyen jegyet vásároltak. Külön admin fül ahol az oldal tulajdonosa(i) tudják nézni a statisztikákat. (A kattintás figyelés majd egy cloude storageba érkezik így bárhonnan tudja figyelni nem csak lokálisan)
+A projekt célja egy olyan weboldal elkészítése, amely egy szórakozóhely működését segíti. Az oldal lehetőséget biztosít a látogatók számára, hogy megtekintsék az aktuális eseményeket, információkat szerezzenek róluk, valamint online jegyet vásároljanak.
+
+A rendszer része egy adminisztrációs felület is, ahol a tulajdonosok nyomon tudják követni az események teljesítményét, a látogatottsági adatokat és az eladott jegyek számát.
+
+---
+
+## Főbb funkciók
+
+### Felhasználói oldal
+
+* Események listázása
+* Események részletes adatainak megtekintése
+* Jegytípusok kiválasztása
+* Online jegyvásárlás
+* Vásárlás után egyedi belépő létrehozása
+* A belépő elküldése emailben a vásárló számára
+
+---
+
+### Admin felület
+
+Az adminisztrátorok számára külön felület készül, ahol megtekinthetők:
+
+* Események megtekintési számai
+* Jegyeladási statisztikák
+* Eladott jegytípusok aránya
+* Egyes események népszerűsége
+
+---
+
+## Statisztikai rendszer
+
+A weboldal figyeli a felhasználói aktivitást, például az események megtekintését és a vásárlásokat.
+
+A gyűjtött adatok alapján lehetőség lesz megállapítani:
+
+* melyik eseményeket nézik meg a legtöbben,
+* melyik jegytípusból fogy a legtöbb,
+* hogyan változik az érdeklődés az események iránt.
+
+Az adatok felhő alapú tárolásba kerülnek, így az adminisztrátorok nem csak helyben, hanem távolról is hozzáférhetnek a statisztikákhoz.
+
+---
+
+# Technológiák
+
+## Frontend
+
+Frontend keretrendszer:
+
+* [React / Angular / Vue / nincs kiválasztva]
+
+Felhasznált technológiák:
+
+* HTML
+* CSS
+* JavaScript
+
+---
+
+## Backend
+
+Backend technológia:
+
+* [Node.js (Express) / C# (.NET Core) REST API]
+
+A backend feladatai:
+
+* Adatok kezelése
+* Vásárlások feldolgozása
+* Kommunikáció a frontend és az adatbázis között
+* Email értesítések kezelése
+* Statisztikai adatok mentése
+
+---
+
+## Adatbázis
+
+Az adatbázisban kerülnek tárolásra például:
+
+* események adatai,
+* jegyek,
+* vásárlások,
+* felhasználói adatok,
+* statisztikai információk.
+
+Adatbázis:
+
+* [MySQL / PostgreSQL]
+
+---
+
+# Tervezett működés
+
+A felhasználó a weboldalon kiválasztja a számára megfelelő eseményt és jegyet. A vásárlás feldolgozása után a rendszer létrehoz egy egyedi belépőt, amelyet emailben megkap a vásárló.
+
+A megtekintések és vásárlások adatai folyamatosan mentésre kerülnek, amelyeket az admin felületen lehet megtekinteni.
+
+---
+
+# Projekt felépítése
+
+```
+Frontend
+   |
+   |
+Backend API
+   |
+   ├── Adatbázis
+   |
+   ├── Fizetési rendszer
+   |
+   ├── Email küldés
+   |
+   └── Statisztikai rendszer
+```
+
+---
+
+# Fejlesztők
+
+* Pohl Máté Balázs Backend
+* Rémes-Szabó Bence Adatbázis
+* Schmidt Dániel Frontend
+
+---
+
+# Verzió
+
+1.0
