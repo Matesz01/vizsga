@@ -1,33 +1,8 @@
-1. Csapat felépítés:
-
-Schmidt Dániel - Front End
-
+csapat felépítés: 
+Schmidt Dániel - Front End 
 Rémes-Szabó Bence Máté - Adatbázis
+Pohl Máté Balzs - back end (Projekt vezető)
 
-Pohl Máté Balázs - Back End (Projekt vezető)
+elvárásaink: 
 
-2. A KKK elvárásainak kijegyzetelése:
-
-Szakmai elvárások: Életszerű, valódi probléma megoldása; Adattárolás és adatkezelés (adatbázis) megvalósítása; RESTful architektúra (szerver és kliens oldali komponens); Asztali és mobil eszközön is működő kliens; Tiszta kód (Clean Code) elveinek követése (átlátható, nem kevert nyelvek, jól kommentezett/dokumentált kód, egymás segítése jegyzetekkel).
-
-Leadandó csomag: Forráskód, Adatbázismodell-diagram, Adatbázis dump, Dokumentáció, Tesztkód és teszteredmények.
-
-3. Témaötletelés (3-4 ötlet):
-
-1. Ötlet (Fő projektünk): Szórakozóhely weboldal és jegyértékesítő rendszer.
-
-Leírás: A weboldalon a felhasználók jegyeket vásárolhatnak különféle eseményekre. Online fizetési lehetőség, amely után a rendszer e-mailben küldi ki az egyedi belépőt.
-
-Adatkezelés/Extra: Kattintásszámláló és statisztika készítése (pl. melyik eseményt hányan nézték meg, mennyi jegy fogyott). Cloud storage integráció a kattintásfigyeléshez. Külön Admin felület a tulajdonos(ok)nak a statisztikák és eladások kezelésére.
-
-2. Ötlet: Éttermi asztalfoglaló és előrendelő rendszer.
-
-Leírás: A vendégek asztalt tudnak foglalni adott napra/órára, az adminisztrátorok (pincérek) pedig látják a foglaltságot és a bejövő online rendeléseket.
-
-3. Ötlet: Konditerem bérletkezelő rendszer.
-
-Leírás: Felhasználói profilok, bérletvásárlás, lejárat figyelése. Az admin felületen a terem tulajdonosa látja a látogatottsági statisztikákat és a bevételeket.
-
-4. Ötlet: Autószerelő időpontfoglaló és munkalap-kezelő.
-
-Leírás: Az ügyfelek időpontot kérhetnek javításra, a szerelők pedig az admin felületen tudják vezetni a javítási státuszokat és a felhasznált alkatrészeket.
+Legyen egy tiszta átlátható kód amiben mindenki el tud igazodni és a programnyelveket nem keverni. Esetlegesen egymásnak jegyzeteket hagyni a kódban hogy tudjuk hogy ki mit akar pontosan csinálni. Mi egy szórakozó helynek készítünk weboldalt ahol jegyeket is lehet vásrolni külön eseményekre. Fizetni is lehessen aztán emailben küldje az egyedi belépőt (azt még valahogy ki kell találni hogyan kell). Kattintás számlálóval miből lehet statisztikát csinálni mennyien nézték meg az adott eseményt illetve hányan milyen jegyet vásároltak. Külön admin fül ahol az oldal tulajdonosa(i) tudják nézni a statisztikákat. (A kattintás figyelés majd egy cloude storageba érkezik így bárhonnan tudja figyelni nem csak lokálisan)
