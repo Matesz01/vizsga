@@ -33,6 +33,9 @@ A frontend feladata lesz a weboldal kinézetének és a felhasználói felületn
 
 A későbbiekben fogjuk eldönteni, hogy milyen frontend keretrendszert vagy technológiát fogunk használni.
 
+angular
+figm-dizájnterv
+
 ---
 
 ## Backend
@@ -50,6 +53,9 @@ Feladatai közé tartozik:
 * email küldések kezelése.
 
 A backendhez használt technológia később kerül kiválasztásra.
+
+java
+c#
 
 ---
 
