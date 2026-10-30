@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lumi — Home</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav">
+  <span class="mark">Lumi</span>
+  <div class="d-none d-md-flex align-items-center">
+    <a class="link" href="lumi-home2.html">Home</a>
+    <a class="link" href="#events">Events</a>
+    <a class="link" href="#tickets">Tickets</a>
+    <a class="link" href="#about">About us</a>
+    <span class="auth" id="authLinks"><a href="signin.html">Sign in</a><a class="primary" href="signup.html">Sign up</a></span>
+    <div class="profile-menu" id="profileMenu" style="display:none;">
+    <button class="icon-btn" aria-label="Cart">🛒<span class="badge zero" id="cartBadge">0</span></button>
+  <button class="profile-icon" id="profileIcon">👤</button>
+
+  <div class="dropdown" id="profileDropdown">
+    <a href="favourite.html">⭐ Kedvencek</a>
+    <a href="cart.html">🛒 Kosaram</a>
+    <a href="settings.html">⚙️ Profil beállítások</a>
+    <hr>
+    <button id="logoutBtn">🚪 Kijelentkezés</button>
+  </div>
+</div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="rule-gold"></div>
+      <h1>All <em>events</em></h1>
+      <p>Pick a night, save it for later, or grab your tickets straight away.</p>
+      
+</div>
+    </div>
+    
+</section>
+
+   <hr class=" opacity-50" >
+   <div class="d-flex align-items-center gap-2">
+  <section class=" genres ms-5 d-flex gap-2">
+    <input type="radio" name="genre" id="all" value="all" checked>
+    <label for="all">all</label>
+    <input type="radio" name="genre" id="Acustic" value="Acustic">
+    <label for="Acustic">Acustic</label>
+    <input type="radio" name="genre" id="Techno" value="Techno">
+    <label for="Techno">Techno</label>
+    <input type="radio" name="genre" id="Retro" value="Retro">
+    <label for="Retro">Retro</label>  
+  </section>
+  <section class="dropbox ms-auto  me-5 d-flex  " >
+    <label for="orderby" class="orderbytext me-2 mt-1">Order by:</label>
+    <select class="form-select" id="sort-event">
+    <option value="datesoon">Date: soonest first</option>
+    <option value="datelatest">Date: latest first</option>
+    <option value="pricelow">Price: low to high</option>
+    <option value="pricehigh">Price: high to low</option>
+    </select>
+  </section>
+  
+  
+  </div>
+  <hr class="opacity-50" >
+
+     
+
+
+  
+</div>
+<div class="Events-text">
+  <span>Lumi Events</span>
+</div>
+<div class="container">
+  <div class="row g-4" id="event-list">
+
+
+
+
+</div>
+<script src="event.js"></script>
+</body>
+
+
